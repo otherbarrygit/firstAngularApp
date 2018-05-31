@@ -1,0 +1,26 @@
+//generate the new module for demo purposes
+ng g m demo/demo --flat --routing
+
+//generate the new component for the buttons
+ng g c demo/buttons --inline-style --inline-template
+
+//generate the new component for the flexbox
+ng g c demo/flexbox --inline-style --inline-template
+
+//generate the new contactmanager module
+ng g m contactmanager
+
+//generate the new contactmanager-app component
+ng g c contactmanager/contactmanager-app --flat --inline-style --inline-template
+
+//generate the new contactmanager-app component
+ng g c contactmanager/contactmanager-app --flat --inline-style --inline-template
+
+//generate the new toolbar component
+ng g c contactmanager/components/toolbar/toolbar --flat
+
+//generate the new sidenav component
+ng g c contactmanager/components/sidenav/sidenav --flat
+
+//generate the new main-content component
+ng g c contactmanager/components/main-content/main-content --flat

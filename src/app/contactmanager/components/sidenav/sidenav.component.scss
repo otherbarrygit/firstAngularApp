@@ -1,0 +1,27 @@
+.app-sidenav-container {
+  flex: 1;
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-sidenav {
+  padding: 0px;
+  //width: 240px;
+}
+
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  padding: 10px;
+}
