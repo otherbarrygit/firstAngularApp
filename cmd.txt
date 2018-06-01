@@ -24,3 +24,10 @@ ng g c contactmanager/components/sidenav/sidenav --flat
 
 //generate the new main-content component
 ng g c contactmanager/components/main-content/main-content --flat
+
+//generate the user service for the comtact manager
+ng g s contactmanager/services/user
+
+//generate the user data store class for the comtact manager
+ng g class contactmanager/models/user
+ng g class contactmanager/models/note

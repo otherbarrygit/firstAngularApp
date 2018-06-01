@@ -4,6 +4,8 @@ import { Routes, RouterModule} from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/material.module';
+import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes: Routes = [
@@ -15,10 +17,12 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule.forChild(routes),
     MaterialModule,
     FormsModule
   ],
+  providers: [ UserService ],
   declarations: []
 })
 export class ContactmanagerModule { }

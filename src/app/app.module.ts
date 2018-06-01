@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
 import { MaterialModule } from './shared/material.module';
-import {Form, FormsModule} from '@angular/forms';
+import { Form, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -12,6 +12,7 @@ import { ContactmanagerAppComponent } from './contactmanager/contactmanager-app.
 import { MainContentComponent } from './contactmanager/components/main-content/main-content.component';
 import { SidenavComponent } from './contactmanager/components/sidenav/sidenav.component';
 import { ToolbarComponent } from './contactmanager/components/toolbar/toolbar.component';
+import { HttpClientModule}  from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
@@ -34,6 +35,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     MaterialModule,
     FormsModule
