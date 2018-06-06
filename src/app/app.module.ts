@@ -12,14 +12,16 @@ import { ContactmanagerAppComponent } from './contactmanager/contactmanager-app.
 import { MainContentComponent } from './contactmanager/components/main-content/main-content.component';
 import { SidenavComponent } from './contactmanager/components/sidenav/sidenav.component';
 import { ToolbarComponent } from './contactmanager/components/toolbar/toolbar.component';
-import { HttpClientModule}  from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
+import {ContactmanagerModule} from './contactmanager/contactmanager.module';
 
 const routes: Routes = [
   { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
-  { path: 'contact', component: ContactmanagerAppComponent,
-    children: [
-      { path: '', component: MainContentComponent }
-      ]},
+  { path: 'contact', loadChildren: './contactmanager/contactmanager.module#ContactmanagerModule'},
+  // { path: 'contact', component: ContactmanagerAppComponent,
+  //   children: [
+  //     { path: '', component: MainContentComponent }
+  //     ]},
   { path: '**', redirectTo: 'contact'}
 ];
 
@@ -27,10 +29,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LandingPageComponent,
-    ContactmanagerAppComponent,
-    ToolbarComponent,
-    SidenavComponent,
-    MainContentComponent
+    // ContactmanagerAppComponent,
+    // ToolbarComponent,
+    // SidenavComponent,
+    // MainContentComponent
   ],
   imports: [
     BrowserModule,
