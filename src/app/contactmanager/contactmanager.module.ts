@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule} from '@angular/router';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/material.module';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,7 +30,8 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forChild(routes),
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ UserService ],
   declarations: [
