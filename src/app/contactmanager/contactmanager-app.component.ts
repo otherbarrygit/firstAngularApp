@@ -7,7 +7,9 @@ import { DomSanitizer } from '@angular/platform-browser';
   template: `
     <app-sidenav></app-sidenav>
   `,
-  styles: []
+  styles: [
+    'h1 { font-weight: normal; }'
+  ]
 })
 export class ContactmanagerAppComponent implements OnInit {
 

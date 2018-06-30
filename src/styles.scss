@@ -1,4 +1,7 @@
 //@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  padding: 100px;
+}
 
 
 @import '~@angular/material/theming';
@@ -14,7 +17,7 @@ $candy-app-theme: mat-light-theme(
 @include angular-material-theme($candy-app-theme);
 
 .dark-theme {
-  $primary-dark: mat-palette($mat-pink, 700);
+  $primary-dark: mat-palette($mat-yellow, 700);
   $accent-dark: mat-palette($mat-green);
   $warn-dark: mat-palette($mat-red);
 
